@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Flutter to GitHub Pages
 
 on:
   push:
@@ -13,8 +13,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: 'stable'
-          channel: 'stable'
+          flutter-version: '3.7.7'
       - name: Install dependencies
         run: flutter pub get
       - name: Build web app
